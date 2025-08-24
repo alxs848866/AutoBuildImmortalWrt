@@ -557,7 +557,7 @@ jobs:
           fi
 
 
-      - name: Build Wireless ImmortalWrt 24.10.2
+      - name: Build Wireless ImmortalWrt 23.05.4
         run: |
           profile="${{ github.event.inputs.profile }}"
           echo "Building for profile: $profile"
@@ -628,7 +628,7 @@ jobs:
                       echo "platform=$case_platform" >> $GITHUB_ENV
                   else
                       # 默认分支
-                      tag=mediatek-filogic-openwrt-24.10.2
+                      tag=mediatek-filogic-openwrt-23.05.4
                   fi
                   ;;
             esac
